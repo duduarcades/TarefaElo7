@@ -1,6 +1,5 @@
 $colorGreen: #359C9C;
 $colorBrown: #937873;
-$colorDefault: #9B9B9B;
 $colorOrange: #F9AC5A;
 
 *, *:before, *:after {
@@ -31,6 +30,12 @@ img { border: 0; width: 100%; max-width: 100%; vertical-align: middle; }
 a { text-decoration: none; }
 a img { border: 0; }
 
+.flexWraper {
+	display: webkit-flex;
+	display: flex;
+	flex-wraper: wraper;	
+}
+
 .content {
 	max-width: 960px;
 	width: 100%;
@@ -55,6 +60,8 @@ a img { border: 0; }
 			color: #fff;
 			font-weight: 900;
 			text-align: center;
+
+			text-shadow: 2px 2px 3px #333;
 
 		}
 
@@ -139,9 +146,7 @@ a img { border: 0; }
 	}
 
 	ul {
-		display: -webkit-flex;
-		display: flex;
-		flex-wrap: wrap;
+		@extend .flexWraper;
 
 		li {
 			width: 49%;
@@ -149,16 +154,6 @@ a img { border: 0; }
 			margin-bottom: 10px;
 
 			&:nth-of-type(2n+2) { margin-right: 0;}		
-
-			a {	
-				transition: transform .45s;
-				display: block;			
-				&:hover {
-					transition: transform .45s;
-					transform: scale(1.1);
-					box-shadow: 1px 1px 3px #666;
-				}
-			}
 		}
 	}
 }
@@ -209,6 +204,106 @@ a img { border: 0; }
 		}
 
 	}
+}
+
+
+@media (min-width: 768px) {
+
+	.btn-link { margin: 40px auto 0 auto;}
+	.content { padding: 50px;}
+
+	.main-header {
+		h1 { 
+			font-size: 40px; width: 320px !important;
+			margin-left: -160px !important; bottom: 136px !important;
+		}
+	}
+
+	.main-place-video {
+		
+		display: webkit-flex;
+		display: flex;
+		flex-wraper: wraper;
+
+		.box-video {
+			width: 50%;
+			margin-right: 50px;
+		}
+		.about-Content {
+			width: 50%;
+			hgroup { margin: 0 0 40px 0;}
+		}
+	}
+
+	.about-team {
+		h2 { 
+			width: 280px; 
+			margin: 50px auto;
+		}
+
+		
+		li {
+			width: 24.00% !important;
+			margin-right: 1% !important;
+			&:nth-of-type(2n+2) { margin-right: 1% !important;}
+			&:nth-of-type(4n+4) { margin-right: 0; }
+		}
+		
+	}
+
+
+	.about-team {
+
+		a {	
+			transition: all .45s;
+			display: block;			
+			&:hover {
+				transition: all .45s;
+				transform: scale(1.4);
+				box-shadow: 1px 1px 8px #666;
+			}
+		}
+	}
+
+	.life-style {
+		&.content { padding: 50px 50px 0 50px;}
+		ul {
+			display: webkit-flex;
+			display: flex;
+			flex-wraper: wraper;
+
+		}
+		li {
+			width: 33% !important;
+			margin-right: 40px;
+
+			&:nth-of-type(3n+3) { margin-right: 0; }
+			p { text-align: justify;}
+		}
+	}
+
+	.main-footer {
+		h2 { 
+			font-size: 1.2em; 
+			margin: 40px 0 !important; 
+		}
+		h3 { margin: 20px 0 40px 0 !important; }
+
+		li {
+			display: webkit-flex;
+			display: flex;
+			flex-wraper: wraper;
+			
+			a, p { 
+				display: block;
+				width: 50%;
+				font-size: 1.125em;
+			}	
+			p { text-align: right;}
+		}
+
+	}
+	
 }
 
 
