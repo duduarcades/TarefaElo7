@@ -50,10 +50,10 @@ a {
 a img {
   border: 0; }
 
-.flexWraper, .about-team ul {
+.flexWrap, .about-team ul {
   display: webkit-flex;
   display: flex;
-  flex-wraper: wraper; }
+  flex-wrap: wrap; }
 
 .content {
   max-width: 960px;
@@ -125,7 +125,8 @@ a img {
 .about-team ul li {
   width: 49%;
   margin-right: 2%;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  display: block; }
   .about-team ul li:nth-of-type(2n+2) {
     margin-right: 0; }
 
@@ -178,12 +179,12 @@ a img {
   .main-place-video {
     display: webkit-flex;
     display: flex;
-    flex-wraper: wraper; }
+    flex-wrap: wrap; }
     .main-place-video .box-video {
-      width: 50%;
+      width: 46%;
       margin-right: 50px; }
     .main-place-video .about-Content {
-      width: 50%; }
+      width: 46%; }
       .main-place-video .about-Content hgroup {
         margin: 0 0 40px 0; }
 
@@ -197,7 +198,6 @@ a img {
       margin-right: 1% !important; }
     .about-team li:nth-of-type(4n+4) {
       margin-right: 0; }
-
   .about-team a {
     transition: all .45s;
     display: block; }
@@ -211,10 +211,10 @@ a img {
   .life-style ul {
     display: webkit-flex;
     display: flex;
-    flex-wraper: wraper; }
+    flex-wrap: wrap; }
   .life-style li {
-    width: 33% !important;
-    margin-right: 40px; }
+    width: 29% !important;
+    margin-right: 6%; }
     .life-style li:nth-of-type(3n+3) {
       margin-right: 0; }
     .life-style li p {
@@ -228,7 +228,7 @@ a img {
   .main-footer li {
     display: webkit-flex;
     display: flex;
-    flex-wraper: wraper; }
+    flex-wrap: wrap; }
     .main-footer li a, .main-footer li p {
       display: block;
       width: 50%;
