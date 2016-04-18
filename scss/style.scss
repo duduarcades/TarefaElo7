@@ -21,7 +21,7 @@ $colorOrange: #F9AC5A;
 }
 
 body { background: #fff; }
-h1 { font-size: 2.3em; font-weight: 300; }
+h1 { font-size: 2em; font-weight: 300; }
 h2 { font-weight: 900; color: $colorBrown; text-transform: uppercase; }
 h3 { font-size: 1.5em; font-weight: 500; }
 p { margin-bottom: 15px; color: $colorBrown; }
@@ -46,11 +46,11 @@ a img { border: 0; }
 		position: relative;
 
 		h1 { 
-			width: 280px;
+			width: 250px;
 			position: absolute;
 			left: 50%;
 			bottom: 50px;
-			margin-left: -140px;			
+			margin-left: -125px;			
 			
 			color: #fff;
 			font-weight: 900;
