@@ -20,7 +20,7 @@ $colorOrange: #F9AC5A;
 }
 
 body { background: #fff; }
-h1 { font-size: 2em; font-weight: 300; }
+h1 { font-size: 2em; font-weight: 900; }
 h2 { font-weight: 900; color: $colorBrown; text-transform: uppercase; }
 h3 { font-size: 1.4em; font-weight: 500; }
 p { margin-bottom: 15px; color: $colorBrown; }
@@ -55,11 +55,8 @@ a img { border: 0; }
 		left: 50%;
 		bottom: 50px;
 		margin-left: -125px;			
-		
 		color: #fff;
-		font-weight: 900;
 		text-align: center;
-
 		text-shadow: 2px 2px 3px #333;
 
 	}
@@ -113,7 +110,6 @@ a img { border: 0; }
 	background-color: #F8F8F8;
 
 	h2 { 
-		font-weight: bold; 
 		font-size: 1.25em;
 		text-transform: uppercase; 
 		margin: 10px 0;
@@ -133,19 +129,7 @@ a img { border: 0; }
 		font-size: 1.5em;
 		margin: 20px 0;
 	}
-
-	ul {
-		@extend .flexWrap;
-
-		li {
-			width: 49%;
-			margin-right: 2%;
-			margin-bottom: 10px;
-			display: block;
-
-			&:nth-of-type(2n+0) { margin-right: 0;}		
-		}
-	}
+	li { margin-bottom: 10px; }	
 }
 
 .life-style {
@@ -194,14 +178,33 @@ a img { border: 0; }
 
 }
 
+@media screen and (min-width: 480px) {
+
+	.about-team {
+		ul {
+			display: webkit-flex;
+			display: flex;
+			flex-wrap: wrap;
+			
+			li {
+				width: 49%;
+				margin-right: 2%;
+				margin-bottom: 10px;
+				display: block;
+				&:nth-of-type(2n+0) { margin-right: 0;}		
+			}
+		}	
+	}	
+}
+
 
 @media screen and (min-width: 640px) {
 	.main-footer {
 		h2 { 
 			font-size: 1.2em; 
-			margin: 40px 0 !important; 
+			margin: 40px 0;  
 		}
-		h3 { margin: 20px 0 40px 0 !important; }
+		h3 { margin: 20px 0 40px 0; }
 
 		li {
 			display: webkit-flex;
@@ -226,7 +229,7 @@ a img { border: 0; }
 
 	.main-header {
 		h1 { 
-			font-size: 40px; width: 320px;
+			font-size: 2.5em; width: 320px;
 			margin-left: -160px; bottom: 136px;
 		}
 	}
@@ -254,7 +257,6 @@ a img { border: 0; }
 			margin: 50px auto;
 		}
 
-		
 		li {
 			width: 24% !important;
 			margin-right: 1% !important;
@@ -277,13 +279,8 @@ a img { border: 0; }
 
 	.life-style {
 		&.content { padding: 50px 50px 0 50px;}
-		ul {
-			display: webkit-flex;
-			display: flex;
-			flex-wrap: wrap;
-		}
 		li {
-			width: 29% !important;
+			width: 29%;
 			margin-right: 6%;
 			min-height: 420px;
 			&:nth-of-type(3n+0) { margin-right: 0; }
@@ -293,11 +290,3 @@ a img { border: 0; }
 	}
 	
 }
-
-
-
-
-
-
-
-

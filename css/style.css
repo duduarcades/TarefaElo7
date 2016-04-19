@@ -17,7 +17,7 @@ body {
 
 h1 {
   font-size: 2em;
-  font-weight: 300; }
+  font-weight: 900; }
 
 h2 {
   font-weight: 900;
@@ -50,7 +50,7 @@ a {
 a img {
   border: 0; }
 
-.flexWrap, .about-team ul {
+.flexWrap {
   display: webkit-flex;
   display: flex;
   flex-wrap: wrap; }
@@ -75,7 +75,6 @@ a img {
     bottom: 50px;
     margin-left: -125px;
     color: #fff;
-    font-weight: 900;
     text-align: center;
     text-shadow: 2px 2px 3px #333; }
 
@@ -109,7 +108,6 @@ a img {
 .main-about {
   background-color: #F8F8F8; }
   .main-about h2 {
-    font-weight: bold;
     font-size: 1.25em;
     text-transform: uppercase;
     margin: 10px 0; }
@@ -122,13 +120,8 @@ a img {
   text-align: center;
   font-size: 1.5em;
   margin: 20px 0; }
-.about-team ul li {
-  width: 49%;
-  margin-right: 2%;
-  margin-bottom: 10px;
-  display: block; }
-  .about-team ul li:nth-of-type(2n+0) {
-    margin-right: 0; }
+.about-team li {
+  margin-bottom: 10px; }
 
 .life-style.content {
   padding: 50px 4% 0 4%; }
@@ -163,12 +156,24 @@ a img {
     color: #937873;
     font-weight: bold; }
 
+@media screen and (min-width: 480px) {
+  .about-team ul {
+    display: webkit-flex;
+    display: flex;
+    flex-wrap: wrap; }
+    .about-team ul li {
+      width: 49%;
+      margin-right: 2%;
+      margin-bottom: 10px;
+      display: block; }
+      .about-team ul li:nth-of-type(2n+0) {
+        margin-right: 0; } }
 @media screen and (min-width: 640px) {
   .main-footer h2 {
     font-size: 1.2em;
-    margin: 40px 0 !important; }
+    margin: 40px 0; }
   .main-footer h3 {
-    margin: 20px 0 40px 0 !important; }
+    margin: 20px 0 40px 0; }
   .main-footer li {
     display: webkit-flex;
     display: flex;
@@ -187,7 +192,7 @@ a img {
     padding: 50px; }
 
   .main-header h1 {
-    font-size: 40px;
+    font-size: 2.5em;
     width: 320px;
     margin-left: -160px;
     bottom: 136px; }
@@ -226,12 +231,8 @@ a img {
 
   .life-style.content {
     padding: 50px 50px 0 50px; }
-  .life-style ul {
-    display: webkit-flex;
-    display: flex;
-    flex-wrap: wrap; }
   .life-style li {
-    width: 29% !important;
+    width: 29%;
     margin-right: 6%;
     min-height: 420px; }
     .life-style li:nth-of-type(3n+0) {
