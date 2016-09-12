@@ -2,7 +2,7 @@ $colorGreen: #359C9C;
 $colorBrown: #937873;
 $colorOrange: #F9AC5A;
 
-*, *:before, *:after {
+*, *::before, *::after {
 	margin: 0;
 	padding: 0;
 
@@ -14,9 +14,9 @@ $colorOrange: #F9AC5A;
 	letter-spacing: 0em;
 	vertical-align: middle;
 
-	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body { background: #fff; }
@@ -32,8 +32,8 @@ a img { border: 0; }
 
 .flexWrap {
 	display: webkit-flex;
-	display: flex;
 	flex-wrap: wrap;
+	display: flex;
 }
 
 .relative { position: relative;}
@@ -88,8 +88,8 @@ a img { border: 0; }
 		transform: scale(1.05);
 	}
 
-	&:before,
-	&.know-more:before {
+	&::before,
+	&.know-more::before {
 		content: ">>";
 		display: block;
 		position: absolute;
@@ -101,7 +101,7 @@ a img { border: 0; }
 	}
 
 	&.know-more {
-		&:before { right: 37px;	}
+		&::before { right: 37px;	}
 	}
 
 }
